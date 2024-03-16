@@ -15,26 +15,32 @@ public class Basics {
         web driver interface + its own method.
         That's if we want pure web driver method create  web driver object
         */
-       //  ChromeDriver driver = new ChromeDriver();
-       // FirefoxDriver driver= new FirefoxDriver();
+        //  ChromeDriver driver = new ChromeDriver();
+        // FirefoxDriver driver= new FirefoxDriver();
         /*
-        * There are two methods to invoke a browser first with chromedriver.exe file st a path and give else
-        * used selenium manager which initiate a browser using chromedriver.exe file from connecting to web
-        * this manager in-built in driver class.
-        */
+         * There are two methods to invoke a browser first with chromedriver.exe file st a path and give else
+         * used selenium manager which initiate a browser using chromedriver.exe file from connecting to web
+         * this manager in-built in driver class.
+         */
         //Method 2
         // WebDriver driver = new ChromeDriver();
         //Method 1
 
         //For Chrome
 
-        System.setProperty("webdriver.chrome.driver","/home/saad/Downloads/chromedriver-linux64/chromedriver");
-        WebDriver driver =new ChromeDriver();
+        //My Ubuntu machine Path
+        //System.setProperty("webdriver.chrome.driver","/home/saad/Downloads/chromedriver-linux64/chromedriver");
+
+
+        //For Windows OS Path
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+
+
+        WebDriver driver = new ChromeDriver();
 
         //For FireFox
         //System.setProperty("webdriver.gecko.driver","/home/saad/Downloads/geckodriver-v0.33.0-linux64/geckodriver");
         //WebDriver driver =new FirefoxDriver();
-
 
 
         driver.get("https://rahulshettyacademy.com/");
@@ -44,6 +50,5 @@ public class Basics {
         driver.close();
         //close all url in browser ad close program
         driver.quit();
-
     }
 }
