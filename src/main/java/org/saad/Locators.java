@@ -9,7 +9,10 @@ import java.time.Duration;
 public class Locators {
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver","/home/saad/Downloads/chromedriver-linux64/chromedriver");
+        //System.setProperty("webdriver.chrome.driver","/home/saad/Downloads/chromedriver-linux64/chromedriver");
+        //For Windows OS Path
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
+
         WebDriver driver =new ChromeDriver();
 
         // Implicit waits added so when we put wrong credentials error banner capture

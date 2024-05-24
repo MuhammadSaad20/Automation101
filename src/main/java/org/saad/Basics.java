@@ -33,7 +33,7 @@ public class Basics {
 
 
         //For Windows OS Path
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 
 
         WebDriver driver = new ChromeDriver();
