@@ -55,9 +55,10 @@ public class Xpaths {
         driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");   //-- Using regex in css
-        Thread.sleep(1000);
+
 
         driver.findElement(By.id("chkboxOne")).click();
-        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();//-- Using regex in xpath
+        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+        //-- Using regex in xpath
     }
 }

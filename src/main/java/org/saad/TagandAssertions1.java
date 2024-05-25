@@ -32,9 +32,15 @@ public class TagandAssertions1 {
         //not much recommended
         System.out.println(driver.findElement(By.tagName("p")).getText());
         Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"You are successfully logged in.");
+        //css selector parent to child in xpath //parent/child
         Assert.assertEquals(driver.findElement(By.cssSelector("div[class*=login] h2")).getText(),"Hello " +name+",");
+        //Find xpath by tag text
+        //If we think that without tag name its unique so don't need to do write it we just add * (only in xpath's)
+        // OR if we want so xpath becomes //button[text()='Log Out']
+        driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+
         System.out.println( greenColor + "All test Pass!");
-        driver.quit();
+        driver.close();
 
 
     }
