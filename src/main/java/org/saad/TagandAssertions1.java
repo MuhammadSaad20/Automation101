@@ -3,6 +3,7 @@ package org.saad;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
 import java.time.Duration;
@@ -16,8 +17,11 @@ public class TagandAssertions1 {
     public static void main(String[] args) {
         String greenColor = "\u001B[32m";
         String name="Saad";
-        System.setProperty("webdriver.chrome.driver","C:\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver=new ChromeDriver();
+       // System.setProperty("webdriver.chrome.driver","C:\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.edge.driver","C:\\edgedriver_win64\\msedgedriver.exe");
+
+      //  WebDriver driver=new ChromeDriver();
+        WebDriver driver=new EdgeDriver();
         String password=getPassword(driver);
         // Implicit waits added so when we put wrong credentials error banner capture // something to show
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
