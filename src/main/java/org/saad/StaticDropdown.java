@@ -34,7 +34,7 @@ public class StaticDropdown {
         dropdown.selectByValue("option2");
         System.out.println(dropdown.getFirstSelectedOption().getText());
 
-        //Move to Dropdown winch has incremental counter (not static)
+        //Move to Dropdown wich has incremental counter (not static)
         driver.navigate().to("https://www.spicejet.com/");
         try {
             Thread.sleep(8000);
