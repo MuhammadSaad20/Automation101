@@ -10,7 +10,7 @@ public class DynamicDropDown {
 
         System.setProperty("webdriver.chrome.driver","C:\\chromedriver-win64\\chromedriver.exe");
         WebDriver driver= new ChromeDriver();
-       /* driver.get("https://www.spicejet.com/");
+        driver.get("https://www.spicejet.com/");
 
         driver.findElement(By.xpath("//div[text()='From']")).click();
         driver.findElement(By.xpath("//div[text()='International']")).click();
@@ -23,7 +23,7 @@ public class DynamicDropDown {
         //System.out.println(driver.findElement(By.xpath("//div[text()='International']")).getText());
         driver.findElement(By.xpath("//div[text()='International']")).click();
         driver.findElement(By.xpath("//div[text()='King Abdulaziz International Airport']")).click();
-*/
+
 
 
         driver.navigate().to("https://rahulshettyacademy.com/dropdownsPractise/");
