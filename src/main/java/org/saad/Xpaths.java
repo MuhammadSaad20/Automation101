@@ -36,7 +36,7 @@ public class Xpaths {
         //<input type="text" placeholder="a">  -- 3
         //  xPath become -> //input[@type="text"][1]
         // css selector become -> input[type="text"]:nth-child(1)
-        //Note index in css and xpath may vary for same element
+        //Note index in css and xpath may vary for the same element
 
         driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("abc@x.com");
         driver.findElement(By.xpath("//input[@type='text'][2]")).clear();

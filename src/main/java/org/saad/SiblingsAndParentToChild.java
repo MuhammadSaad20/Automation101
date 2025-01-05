@@ -15,8 +15,8 @@ public class SiblingsAndParentToChild {
         WebDriver driver= new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         /*
-        Absolute xpath mean stating from html tag, so we do like this /html/body/header
-        Relative xpath mean we do not start from top we jump to middle of the page, so we do like this //body/header
+        Absolute xpath mean stating from HTML tag, so we do like this /html/body/header
+        Relative xpath mean we do not start from top we jump to the middle of the page, so we do like this //body/header
          */
 
         //Sibling Tag  -> //tag/tag/tag[index]/following-sibling::tag[index] INDEX is optional
@@ -24,7 +24,7 @@ public class SiblingsAndParentToChild {
         System.out.println(driver.findElement(By.xpath("//body/header/div/button[1]/following-sibling::button[1]")).getText());
 
         //Child To Parent -> //tag/tag/tag[index]/parent::tag/tag[index]
-        //body/header/div/button[1]/parent::tag/button[1]  INDEX is optional
+        //body/header/div/button[1]/parent::tag/button[1] INDEX is optional
         System.out.println(driver.findElement(By.xpath("//body/header/div/button[1]/parent::div/button[1]")).getText());
 
 
